@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/hou_color"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:background="?attr/hou_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="78dp"
+            android:layout_marginTop="166dp"
+            android:layout_marginEnd="55dp"
+            android:text="记事本"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="?attr/qian_color"
+            android:textSize="48sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/mima_text"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_below="@+id/textView"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="78dp"
+            android:layout_marginTop="59dp"
+            android:layout_marginEnd="55dp"
+            android:background="@drawable/edit_background"
+            android:ems="10"
+            android:inputType="numberPassword"
+            android:textAlignment="center"
+            android:textColor="?attr/tf_black_color"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:hint="请输入密码"
+            android:textColorHint="#757373"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="140dp"
+            android:layout_height="72dp"
+            android:layout_below="@+id/mima_text"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="121dp"
+            android:backgroundTint="?attr/qian_color"
+            android:text="打开记事本"
+            android:textColor="?attr/tf_white_color"
+            android:textColorLink="?attr/tf_white_color"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mima_text" />
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

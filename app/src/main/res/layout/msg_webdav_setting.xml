@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/webdav_url"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="WebDav服务器"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/webdav_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="账号"
+        android:inputType="text"
+        android:layout_marginTop="16dp" />
+    <EditText
+        android:id="@+id/webdav_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="密码"
+        android:inputType="text"
+        android:layout_marginTop="16dp" />
+</LinearLayout>

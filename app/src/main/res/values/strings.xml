@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Note</string>
+    <string-array name="options">
+        <item>设置</item>
+        <item>重置主密码</item>
+        <item>重置笔记本</item>
+        <item>导入数据</item>
+        <item>导出数据</item>
+        <item>切换主题</item>
+        <item>设置WebDav</item>
+        <item>WebDav备份</item>
+        <item>WebDav恢复</item>
+    </string-array>
+</resources>

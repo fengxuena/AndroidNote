@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relaout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true"
+    android:background="?attr/hou_color">
+
+    <TextView
+        android:id="@+id/notename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:background="?attr/qian_color"
+        android:text="笔记本"
+        android:textAlignment="viewStart"
+        android:textColor="?attr/tf_white_color"
+        android:textSize="20dp"
+        android:padding="10dp"
+        android:textStyle="bold" />
+
+
+    <Button
+        android:id="@+id/search_buttons"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/notename"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:background="?attr/qian_color"
+        android:text="搜索记录"
+        android:textColor="?attr/tf_white_color"
+        android:textSize="14dp" />
+
+    <ListView
+        android:id="@+id/mylistView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/kongbai2"
+        android:layout_below="@+id/notename"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:background="?attr/hou_color"
+        android:backgroundTint="?attr/hou_color"
+        android:divider="@null"
+        android:textAlignment="viewStart"></ListView>
+
+    <Space
+        android:id="@+id/kongbai2"
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        android:layout_above="@+id/editTextTextMultiLine"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/takephoto_button"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="3dp"
+        android:drawablePadding="5dp"
+        android:drawableStart="@drawable/edit_background"
+        android:padding="5dp"
+        android:background="@drawable/edit_background"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:textColor="?attr/tf_black_color"
+        android:textSize="20dp"
+        android:hint="\n"/>
+
+    <Button
+        android:id="@+id/post_button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@+id/takephoto_button"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toEndOf="@+id/postphoto_button"
+        android:backgroundTint="?attr/qian_color"
+        android:text="发送"
+        android:textColor="?attr/tf_white_color"
+        android:textSize="17dp" />
+
+    <Button
+        android:id="@+id/postphoto_button"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@+id/takephoto_button"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toEndOf="@+id/takephoto_button"
+        android:backgroundTint="?attr/qian_color"
+        android:text="发送图片"
+        android:textColor="?attr/tf_white_color"
+        android:textSize="17dp" />
+
+    <Button
+        android:id="@+id/takephoto_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginBottom="0dp"
+        android:backgroundTint="?attr/qian_color"
+        android:text="拍照"
+        android:textColor="?attr/tf_white_color"
+        android:textSize="17dp" />
+
+
+</RelativeLayout>

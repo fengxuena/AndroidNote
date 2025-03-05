@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="qian_color" format="color"/>//前景色
+    <attr name="hou_color" format="color"/>//后景色
+    <attr name="tf_white_color" format="color"/>//字体白色
+    <attr name="tf_black_color" format="color"/>//字体白色
+</resources>

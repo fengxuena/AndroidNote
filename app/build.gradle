@@ -1,0 +1,49 @@
+plugins {
+    alias(libs.plugins.androidApplication)
+}
+android {
+    namespace 'com.fengxue.mynote'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.fengxue.mynote"
+        minSdk 30
+        targetSdk 34
+        versionCode 1
+        versionName "2.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    configurations.all {
+        resolutionStrategy {
+            force 'com.google.guava:guava:20.0'
+        }
+    }
+    implementation 'com.github.thegrizzlylabs:sardine-android:v0.9'//webdav
+    implementation("com.squareup.okhttp3:okhttp:4.9.0")
+    implementation 'com.github.TutorialsAndroid:FilePicker:v9.0.1'
+    implementation 'com.vaadin.external.google:guava:16.0.1.vaadin1'
+    implementation 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    implementation 'cn.hutool:hutool-all:5.6.3'
+    implementation 'com.google.code.gson:gson:2.9.1'
+    implementation libs.appcompat
+    implementation libs.material
+    implementation libs.gridlayout
+    testImplementation libs.junit
+    androidTestImplementation libs.ext.junit
+    androidTestImplementation libs.espresso.core
+    implementation 'androidx.core:core:1.12.0'
+}
